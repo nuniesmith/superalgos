@@ -26,34 +26,49 @@ services:
       - ./My-Social-Trading-Data:/app/Platform/My-Social-Trading-Data:z
       - superalgos-pm2-data:/tmp/.pm2
     restart: on-failure
+    networks:
+      - superalgos_network
+    extra_hosts:
+      - "superalgos.local:host-gateway"
     deploy:
       resources:
         limits:
           memory: 32768M
         reservations:
-          memory: 16384M
+          memory: 16768M
 
   nginx:
     container_name: nginx
-    image: nginx:latest
     build:
       context: .
       dockerfile: ./docker/nginx/Dockerfile
+    image: nginx:latest
     environment:
       - TZ=America/New_York
     ports:
       - "80:80"
       - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./logs/nginx:/var/log/nginx
+    networks:
+      - superalgos_network
+    extra_hosts:
+      - "superalgos.local:host-gateway"
     restart: always
     depends_on:
-      - api
-      - worker
-      - app
+      - superalgos
     deploy:
       resources:
         limits:
           cpus: '1'
           memory: 1024M
+
+networks:
+  superalgos_network:
+    driver: bridge
 
 volumes:
   superalgos-pm2-data:
