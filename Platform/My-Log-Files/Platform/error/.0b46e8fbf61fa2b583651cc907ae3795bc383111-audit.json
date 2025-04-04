@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/app/Platform/My-Log-Files/Platform/error/.0b46e8fbf61fa2b583651cc907ae3795bc383111-audit.json",
+    "files": [
+        {
+            "date": 1743755172824,
+            "name": "/app/Platform/My-Log-Files/Platform/error/2025-04-04.log",
+            "hash": "9aee43fa60d446512fbc3409bf22ad985d9870b3608908d53a1ec8b3a67c4705"
+        }
+    ],
+    "hashType": "sha256"
+}

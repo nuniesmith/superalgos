@@ -19,11 +19,12 @@ services:
       - '18041:18041'
       - '18043:18043'
     volumes:
-      - ./My-Data-Storage:/app/Platform/My-Data-Storage:z
-      - ./My-Log-Files:/app/Platform/My-Log-Files:z
-      - ./My-Workspaces:/app/Platform/My-Workspaces:z
-      - ./My-Network-Nodes-Data:/app/Platform/My-Network-Nodes-Data:z
-      - ./My-Social-Trading-Data:/app/Platform/My-Social-Trading-Data:z
+      - ./Platform/My-Data-Storage:/app/Platform/My-Data-Storage:z
+      - ./Platform/My-Log-Files:/app/Platform/My-Log-Files:z
+      - ./Platform/My-Workspaces:/app/Platform/My-Workspaces:z
+      - ./Platform/My-Network-Nodes-Data:/app/Platform/My-Network-Nodes-Data:z
+      - ./Platform/My-Social-Trading-Data:/app/Platform/My-Social-Trading-Data:z
+      - ./Platform/My-Secrets:/app/Platform/My-Secrets:z
       - superalgos-pm2-data:/tmp/.pm2
     restart: on-failure
     networks:
@@ -36,7 +37,7 @@ services:
           memory: 32768M
         reservations:
           memory: 16768M
-  
+
   nginx:
     container_name: nginx
     build:
@@ -49,10 +50,9 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx/ssl:/etc/nginx/ssl
-      - ./logs/nginx:/var/log/nginx
+      - ./nginx/conf.d:/etc/nginx/conf.d:z
+      - ./nginx/ssl:/etc/nginx/ssl:z
+      - ./logs/nginx:/var/log/nginx:z
     networks:
       - superalgos_network
     extra_hosts:
