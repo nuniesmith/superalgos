@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM node:18-alpine
 # Use a non-root user with a specific UID/GID
 ARG USER_ID=1001
 ARG GROUP_ID=1001

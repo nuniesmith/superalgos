@@ -3,35 +3,60 @@ services:
     container_name: superalgos
     build:
       context: ..
-      dockerfile: ./Dockerfile
+      dockerfile: ./docker/superalgos/Dockerfile
     image: ghcr.io/superalgos/superalgos:latest
-    command: ["minMemo", "noBrowser"]  # Added noBrowser for headless operation
+    command: ["minMemo", "noBrowser"]
     user: "1001:1001"
     environment:
       - TZ=America/New_York
       - NODE_ENV=production
-      - NODE_OPTIONS=--max_old_space_size=8192  # Increased memory allocation
+      - NODE_OPTIONS=--max_old_space_size=8192
       - PUID=1001
       - PGID=1001
-      - PM2_HOME=/tmp/.pm2  # Explicitly set PM2 home to a writable directory
+      - PM2_HOME=/tmp/.pm2
     ports:
       - '34248:34248'
       - '18041:18041'
-      - '18043:18043'  # Added Dashboard App Interface port
+      - '18043:18043'
     volumes:
       - ./My-Data-Storage:/app/Platform/My-Data-Storage:z
       - ./My-Log-Files:/app/Platform/My-Log-Files:z
       - ./My-Workspaces:/app/Platform/My-Workspaces:z
       - ./My-Network-Nodes-Data:/app/Platform/My-Network-Nodes-Data:z
       - ./My-Social-Trading-Data:/app/Platform/My-Social-Trading-Data:z
-      - superalgos-pm2-data:/tmp/.pm2  # Added volume for PM2 runtime data
+      - superalgos-pm2-data:/tmp/.pm2
     restart: on-failure
     deploy:
       resources:
         limits:
-          memory: 32768M  # 32GB memory limit
+          memory: 32768M
         reservations:
-          memory: 16384M  # 16GB memory reservation
+          memory: 16384M
+
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    build:
+      context: .
+      dockerfile: ./docker/nginx/Dockerfile
+    environment:
+      - TZ=America/New_York
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+    depends_on:
+      - api
+      - worker
+      - app
+    networks:
+      - frontend_network
+      - backend_network
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1024M
 
 volumes:
   superalgos-pm2-data:
