@@ -49,9 +49,6 @@ services:
       - api
       - worker
       - app
-    networks:
-      - frontend_network
-      - backend_network
     deploy:
       resources:
         limits:
