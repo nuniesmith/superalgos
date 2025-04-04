@@ -13,7 +13,7 @@ services:
       - NODE_OPTIONS=--max_old_space_size=8192
       - PUID=1001
       - PGID=1001
-      - PM2_HOME=/tmp/.pm2
+      - PM2_HOME=/app/Platform/My-PM2-Data
     ports:
       - '34248:34248'
       - '18041:18041'
@@ -25,7 +25,7 @@ services:
       - ./Platform/My-Network-Nodes-Data:/app/Platform/My-Network-Nodes-Data:z
       - ./Platform/My-Social-Trading-Data:/app/Platform/My-Social-Trading-Data:z
       - ./Platform/My-Secrets:/app/Platform/My-Secrets:z
-      - superalgos-pm2-data:/tmp/.pm2
+      - ./Platform/My-PM2-Data:/app/Platform/My-PM2-Data:z
     restart: on-failure
     networks:
       - superalgos_network
@@ -50,7 +50,6 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d:z
       - ./nginx/ssl:/etc/nginx/ssl:z
       - ./logs/nginx:/var/log/nginx:z
     networks:
@@ -69,7 +68,3 @@ services:
 networks:
   superalgos_network:
     driver: bridge
-
-volumes:
-  superalgos-pm2-data:
-    driver: local

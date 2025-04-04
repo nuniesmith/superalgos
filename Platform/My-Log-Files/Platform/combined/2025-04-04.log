@@ -30,3 +30,35 @@
 2025-04-04T08:26:12.968Z | info | Join the @superalgosdevelop Telegram Group to learn more! 
 2025-04-04T08:26:12.968Z | info |  
 2025-04-04T08:26:12.969Z | info | Superalgos Platform App is Running! 
+2025-04-04T08:27:30.351Z | info | SUPERALGOS PLATFORM CLIENT SERVERS: 
+2025-04-04T08:27:30.352Z | info |  
+2025-04-04T08:27:30.352Z | info | Web Server .................................................. Started 
+2025-04-04T08:27:30.352Z | info | UI File Server .............................................. Started 
+2025-04-04T08:27:30.353Z | info | Project File Server ......................................... Started 
+2025-04-04T08:27:30.353Z | info | Plugin Server ............................................... Started 
+2025-04-04T08:27:30.353Z | info | Data File Server ............................................ Started 
+2025-04-04T08:27:30.353Z | info | Events Server ............................................... Started 
+2025-04-04T08:27:30.354Z | info | Task Manager Server ......................................... Started 
+2025-04-04T08:27:30.354Z | info | CCXT Server ................................................. Started 
+2025-04-04T08:27:30.355Z | info | WEB3 Server ................................................. Started 
+2025-04-04T08:27:30.355Z | info | Github Server ............................................... Started 
+2025-04-04T08:27:30.355Z | info | Bitcoin Factory Server ...................................... Started 
+2025-04-04T08:27:30.356Z | info |  
+2025-04-04T08:27:30.356Z | info | SUPERALGOS PLATFORM CLIENT INTERFACES: 
+2025-04-04T08:27:30.356Z | info |  
+2025-04-04T08:27:30.358Z | info | Web Sockets Interface ....................................... Listening at port 18041 
+2025-04-04T08:27:30.367Z | info | Http Interface .............................................. Listening at port 34248 
+2025-04-04T08:27:30.367Z | info | Dashboard App Interface ..................................... Initializing on port 18043 
+2025-04-04T08:27:30.367Z | info | Initial Workspace............................................ undefined undefined 
+2025-04-04T08:27:30.367Z | info |  
+2025-04-04T08:27:30.368Z | info | You are running Superalgos Platform 1.7.0 
+2025-04-04T08:27:30.368Z | info |  
+2025-04-04T08:27:30.368Z | info | What's new? These are the main new features in this version: 
+2025-04-04T08:27:30.368Z | info |  
+2025-04-04T08:27:30.368Z | info | Superalgos P2P Network ...................................... Allows interconnecting clients so that users may collaborate. 
+2025-04-04T08:27:30.368Z | info | Real-time Trading Signals ................................... Enables the broadcasting and consumption of trading signals. 
+2025-04-04T08:27:30.368Z | info | Portfolio Manager ........................................... Portfolio Manager bots supervise and manage Trading Bots for improved capital allocation and risk management. 
+2025-04-04T08:27:30.368Z | info |  
+2025-04-04T08:27:30.368Z | info | Join the @superalgosdevelop Telegram Group to learn more! 
+2025-04-04T08:27:30.368Z | info |  
+2025-04-04T08:27:30.369Z | info | Superalgos Platform App is Running! 
