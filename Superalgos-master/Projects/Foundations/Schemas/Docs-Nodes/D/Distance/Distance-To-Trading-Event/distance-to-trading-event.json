@@ -1,0 +1,52 @@
+{
+    "type": "Distance To Trading Event",
+    "definition": {
+        "text": "Distance to trading event features counters indicating how many periods (candles) have passed since the last occurrence of certain events, in the context of the episode.",
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Distance To Trading Event содержит счетчики, показывающие, сколько периодов (свечей) прошло с момента последнего наступления определенных событий в контексте эпизода.",
+                "updated": 1638732349826
+            },
+            {
+                "language": "TR",
+                "text": "Alım satım olayına olan mesafe, bölüm bağlamında belirli olayların son meydana gelişinden bu yana kaç dönem (mum) geçtiğini gösteren sayaçlar içerir.",
+                "updated": 1654391966835
+            },
+            {
+                "language": "DE",
+                "text": "Der Abstand zum Handelsereignis enthält Zähler, die anzeigen, wie viele Perioden (Kerzen) seit dem letzten Auftreten bestimmter Ereignisse im Kontext der Episode vergangen sind.",
+                "updated": 1708265580297
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content"
+        },
+        {
+            "style": "Text",
+            "text": "The information may be used from within strategies, for example, to leave a cool-down period in-between positions, to separate orders in specific intervals, or to achieve any particular logic that may require counting how much time has passed since the last time a specific event was triggered.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Информация может быть использована внутри стратегий, например, для того, чтобы оставить период охлаждения между позициями, для разделения ордеров через определенные интервалы или для достижения какой-либо конкретной логики, которая может потребовать подсчета времени, прошедшего с момента последнего срабатывания определенного события.",
+                    "updated": 1638732567345
+                },
+                {
+                    "language": "TR",
+                    "text": "Bu bilgiler, örneğin pozisyonlar arasında bir bekleme süresi bırakmak, emirleri belirli aralıklarla ayırmak veya belirli bir olayın en son tetiklenmesinden bu yana ne kadar zaman geçtiğini saymayı gerektirebilecek herhangi bir özel mantığa ulaşmak için stratejiler içinde kullanılabilir.",
+                    "updated": 1654391972703,
+                    "style": "Text"
+                },
+                {
+                    "language": "DE",
+                    "text": "Die Informationen können innerhalb von Strategien verwendet werden, um z. B. eine Abkühlungsphase zwischen den Positionen einzuplanen, um Aufträge in bestimmten Intervallen zu trennen oder um eine bestimmte Logik zu erreichen, die es erforderlich macht, zu zählen, wie viel Zeit seit dem letzten Auslösen eines bestimmten Ereignisses vergangen ist.",
+                    "updated": 1708265580500,
+                    "style": "Text"
+                }
+            ]
+        }
+    ]
+}

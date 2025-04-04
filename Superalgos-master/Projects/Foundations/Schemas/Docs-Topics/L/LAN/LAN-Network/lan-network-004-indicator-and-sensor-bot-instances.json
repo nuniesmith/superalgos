@@ -1,0 +1,170 @@
+{
+    "topic": "LAN Network",
+    "pageNumber": "4",
+    "type": "Indicator and Sensor Bot Instances",
+    "definition": {
+        "text": "Data tasks may run instances of Indicator Bots or Sensor Bots, and some exchange may require an API key for downloading certain kinds or amounts of data. We will look into each of these cases.",
+        "updated": 1610103659306,
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Задачи по сбору данных могут запускать экземпляры ботов-индикаторов или ботов-сенсоров, а некоторые биржи могут требовать API-ключ для загрузки определенных видов или объемов данных. Мы рассмотрим каждый из этих случаев.",
+                "updated": 1640500071998
+            },
+            {
+                "language": "DE",
+                "text": "Data Tasks können Instanzen von Indicator Bots oder Sensor Bots laufen lassen, und einige Exchange können einen API-Schlüssel für das Herunterladen bestimmter Arten oder Mengen von Daten erfordern. Wir werden uns jeden dieser Fälle ansehen.",
+                "updated": 1651911400306
+            },
+            {
+                "language": "TR",
+                "text": "Veri görevleri Gösterge Botlarının veya Sensör Botlarının örneklerini çalıştırabilir ve bazı borsalar belirli türde veya miktarda veriyi indirmek için bir API anahtarı gerektirebilir. Bu durumların her birini inceleyeceğiz.",
+                "updated": 1673807705189
+            },
+            {
+                "language": "PT",
+                "text": "As tarefas de dados podem executar instâncias de Bots de Indicadores ou Bots de Sensores, e algumas correctoras podem exigir uma chave de API para fazer o download das informações de mercado ou conta privada. Vamos analisar cada um destes casos. ",
+                "updated": 1711655736495
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Title",
+            "text": "Indicator Bot Instance",
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Instância do Bot de Indicadores (Indicator Bot)",
+                    "updated": 1711559713874
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Indicator Bot Instance->Definition",
+            "updated": 1610052992001
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Indicator Bot Instance->Content",
+            "updated": 1610053001117
+        },
+        {
+            "style": "Hierarchy",
+            "text": "Foundations->Indicator Bot Instance->5",
+            "updated": 1610103706186
+        },
+        {
+            "style": "Title",
+            "text": "Indicator Process Instance",
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Instância de Indicador de Processos (Indicator Process)",
+                    "updated": 1711559828901
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Indicator Process Instance->Definition",
+            "updated": 1610053043468
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Indicator Process Instance->Content",
+            "updated": 1610053048925
+        },
+        {
+            "style": "Title",
+            "text": "Time Frames Filter",
+            "updated": 1610053086734,
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Filtro dos Intervalos de Tempo",
+                    "updated": 1711559870996
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Time Frames Filter->Definition",
+            "updated": 1610053096751
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Time Frames Filter->Content->",
+            "updated": 1610053112916
+        },
+        {
+            "style": "Title",
+            "text": "Sensor Bot Instance",
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Instância do Bot Sensor",
+                    "updated": 1711560020836
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Sensor Bot Instance->Definition",
+            "updated": 1610053220123
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Sensor Bot Instance->Content",
+            "updated": 1610053224701
+        },
+        {
+            "style": "Hierarchy",
+            "text": "Foundations->Sensor Bot Instance->2",
+            "updated": 1610103781696
+        },
+        {
+            "style": "Title",
+            "text": "Sensor Process Instance",
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Instancia do Sensor de Processos",
+                    "updated": 1711560009397
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Sensor Process Instance->Definition",
+            "updated": 1610053248186
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Sensor Process Instance->Content",
+            "updated": 1610053252094
+        },
+        {
+            "style": "Title",
+            "text": "Key Reference",
+            "updated": 1610103821335,
+            "translations": [
+                {
+                    "language": "PT",
+                    "text": "Chave API",
+                    "updated": 1711560050724
+                }
+            ]
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Key Reference->Definition"
+        },
+        {
+            "style": "Include",
+            "text": "Foundations->Node->Key Reference->Content",
+            "updated": 1610053479747
+        }
+    ]
+}

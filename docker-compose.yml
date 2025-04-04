@@ -1,0 +1,38 @@
+services:
+  superalgos:
+    container_name: superalgos
+    build:
+      context: ..
+      dockerfile: ./Dockerfile
+    image: ghcr.io/superalgos/superalgos:latest
+    command: ["minMemo", "noBrowser"]  # Added noBrowser for headless operation
+    user: "1001:1001"
+    environment:
+      - TZ=America/New_York
+      - NODE_ENV=production
+      - NODE_OPTIONS=--max_old_space_size=8192  # Increased memory allocation
+      - PUID=1001
+      - PGID=1001
+      - PM2_HOME=/tmp/.pm2  # Explicitly set PM2 home to a writable directory
+    ports:
+      - '34248:34248'
+      - '18041:18041'
+      - '18043:18043'  # Added Dashboard App Interface port
+    volumes:
+      - ./My-Data-Storage:/app/Platform/My-Data-Storage:z
+      - ./My-Log-Files:/app/Platform/My-Log-Files:z
+      - ./My-Workspaces:/app/Platform/My-Workspaces:z
+      - ./My-Network-Nodes-Data:/app/Platform/My-Network-Nodes-Data:z
+      - ./My-Social-Trading-Data:/app/Platform/My-Social-Trading-Data:z
+      - superalgos-pm2-data:/tmp/.pm2  # Added volume for PM2 runtime data
+    restart: on-failure
+    deploy:
+      resources:
+        limits:
+          memory: 32768M  # 32GB memory limit
+        reservations:
+          memory: 16384M  # 16GB memory reservation
+
+volumes:
+  superalgos-pm2-data:
+    driver: local

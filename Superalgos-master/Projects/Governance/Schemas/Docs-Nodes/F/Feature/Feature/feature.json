@@ -1,0 +1,102 @@
+{
+    "type": "Feature",
+    "definition": {
+        "text": "A Feature is the capacity of the software to perform tasks required by a specific use case. We describe features so that users may direct Weight Votes to express which of them are the most valuable. This is how users may decide which features to incentivize, both in terms of maintenance and development.",
+        "updated": 1624708747036,
+        "translations": [
+            {
+                "language": "RU",
+                "text": "Feature - это способность программного обеспечения выполнять задачи, необходимые для конкретного случая использования. Мы описываем функции, чтобы пользователи могли направить Weight Votes, чтобы выразить, какие из них являются наиболее ценными. Таким образом, пользователи могут решить, какие функции следует стимулировать, как в плане обслуживания, так и в плане развития.",
+                "updated": 1640284938822
+            },
+            {
+                "language": "TR",
+                "text": "Özellik, yazılımın belirli bir kullanım durumunun gerektirdiği görevleri yerine getirme kapasitesidir. Kullanıcıların Weight Votes'ı hangilerinin en değerli olduğunu ifade edecek şekilde yönlendirebilmeleri için özellikleri tanımlıyoruz. Kullanıcılar, hem bakım hem de geliştirme açısından hangi özelliklerin teşvik edileceğine bu şekilde karar verebilir.",
+                "updated": 1654394833174
+            },
+            {
+                "language": "DE",
+                "text": "Ein Feature ist die Fähigkeit der Software, Aufgaben zu erfüllen, die für einen bestimmten Anwendungsfall erforderlich sind. Wir beschreiben die Funktionen, damit die Benutzer die Gewichtung der Stimmen (Weight Votes) lenken können, um auszudrücken, welche von ihnen am wertvollsten sind. Auf diese Weise können die Benutzer entscheiden, welche Funktionen sowohl im Hinblick auf die Wartung als auch auf die Entwicklung gefördert werden sollen.",
+                "updated": 1712605123692
+            }
+        ]
+    },
+    "paragraphs": [
+        {
+            "style": "Block",
+            "text": "Content",
+            "updated": 1624708766414
+        },
+        {
+            "style": "Text",
+            "text": "You may cast Weight Votes on individual Feature nodes to incentivize the improvement, development, and maintenance of the said feature.",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Вы можете отдавать Weight Votes за отдельные узлы Feature, чтобы стимулировать улучшение, развитие и поддержание указанной функции.",
+                    "updated": 1640284973812
+                },
+                {
+                    "language": "TR",
+                    "text": "Söz konusu özelliğin iyileştirilmesini, geliştirilmesini ve bakımını teşvik etmek için tek tek Özellik düğümlerine Ağırlık Oyları verebilirsiniz.",
+                    "updated": 1654394839046,
+                    "style": "Text"
+                },
+                {
+                    "language": "DE",
+                    "text": "Sie können Gewichtungsstimmen (Weight Votes) für einzelne Funktionsknoten abgeben, um Anreize für die Verbesserung, Entwicklung und Wartung der betreffenden Funktion zu schaffen.",
+                    "updated": 1712605138891
+                }
+            ]
+        },
+        {
+            "style": "Callout",
+            "text": "If you are involved in the development or maintenance of a feature, you may place a Feature Contribution Claim and rally the Community to support your claim with Feature Claim Vote nodes so that you may be rewarded for your work.",
+            "updated": 1630428072285,
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Если вы участвуете в разработке или поддержке функции, вы можете разместить заявку на вклад в функцию (Feature Contribution Claim) и призвать сообщество поддержать вашу заявку с помощью узлов Feature Claim Vote, чтобы вы могли получить вознаграждение за свою работу.",
+                    "updated": 1640285022533
+                },
+                {
+                    "language": "TR",
+                    "text": "Bir özelliğin geliştirilmesinde veya bakımında yer alıyorsanız, bir Özellik Katkısı Talebinde bulunabilir ve çalışmalarınız için ödüllendirilebilmeniz için Özellik Talebi Oy düğümleriyle talebinizi desteklemeleri için Topluluğu bir araya getirebilirsiniz.",
+                    "updated": 1654394845658,
+                    "style": "Callout"
+                },
+                {
+                    "language": "DE",
+                    "text": "Wenn Sie an der Entwicklung oder Wartung eines Features beteiligt sind, können Sie einen Feature-Beitragsanspruch (Feature Contribution Claim) stellen und die Community dazu auffordern, Ihren Anspruch mit Feature-Claim-Abstimmungsknoten (Feature Claim Vote nodes) zu unterstützen, damit Sie für Ihre Arbeit belohnt werden können.",
+                    "updated": 1712605152026
+                }
+            ]
+        },
+        {
+            "style": "Block",
+            "text": "Configuration"
+        },
+        {
+            "style": "Title",
+            "text": "Configuration",
+            "translations": [
+                {
+                    "language": "RU",
+                    "text": "Конфигурация",
+                    "updated": 1640285031783
+                },
+                {
+                    "language": "TR",
+                    "text": "Konfigürasyon",
+                    "updated": 1654394851851,
+                    "style": "Title"
+                },
+                {
+                    "language": "DE",
+                    "text": "Konfiguration",
+                    "updated": 1712605159714
+                }
+            ]
+        }
+    ]
+}
