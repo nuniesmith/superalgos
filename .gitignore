@@ -2,26 +2,26 @@
 logs/
 nginx/
 Platform/
-!Platform/.gitkeep
-!Platform/My-PM2-Data/.gitkeep
-!Platform/My-Log-Files/.gitkeep
-!Platform/My-Data-Storage/.gitkeep
-!Platform/My-Workspaces/.gitkeep
-!Platform/My-Network-Nodes-Data/.gitkeep
-!Platform/My-Social-Trading-Data/.gitkeep
-!Platform/My-Secrets/.gitkeep
+Platform/.gitkeep
+Platform/My-PM2-Data/.gitkeep
+Platform/My-Log-Files/.gitkeep
+Platform/My-Data-Storage/.gitkeep
+Platform/My-Workspaces/.gitkeep
+Platform/My-Network-Nodes-Data/.gitkeep
+Platform/My-Social-Trading-Data/.gitkeep
+Platform/My-Secrets/.gitkeep
 
 # Keep docker-compose.yml and start.sh
-!docker-compose.yml
-!start.sh
+docker-compose.yml
+start.sh
 
 # Logs
 *.log
 
 # Data files
 *.json
-!package.json
-!package-lock.json
+package.json
+package-lock.json
 
 # CSV data
 *.csv
