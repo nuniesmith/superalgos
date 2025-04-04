@@ -1,6 +1,7 @@
 logs/*
 nginx/*
 Platform/*
+*.log
 
 # .gitignore file
 
