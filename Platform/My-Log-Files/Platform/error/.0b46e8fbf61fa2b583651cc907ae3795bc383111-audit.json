@@ -6,9 +6,9 @@
     "auditLog": "/app/Platform/My-Log-Files/Platform/error/.0b46e8fbf61fa2b583651cc907ae3795bc383111-audit.json",
     "files": [
         {
-            "date": 1743755172824,
+            "date": 1743757218803,
             "name": "/app/Platform/My-Log-Files/Platform/error/2025-04-04.log",
-            "hash": "9aee43fa60d446512fbc3409bf22ad985d9870b3608908d53a1ec8b3a67c4705"
+            "hash": "3388ec2d23c020c644927879759fcc022ccce4b7d62027e141bdaeabc1a5b6f2"
         }
     ],
     "hashType": "sha256"
